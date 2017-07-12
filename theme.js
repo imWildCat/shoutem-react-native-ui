@@ -1,18 +1,18 @@
-import {
-  Dimensions,
-  StyleSheet,
-  NavigationExperimental,
-  Platform,
-  StatusBar,
-} from 'react-native';
+import * as NavigationExperimental from 'navigation-experimental';
 
 import {
+  Dimensions,
+  Platform,
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
+import {
   INCLUDE,
-  createVariations,
-  createSharedStyle,
-  inverseColorBrightnessForAmount,
   changeColorAlpha,
+  createSharedStyle,
+  createVariations,
   getSizeRelativeToReference,
+  inverseColorBrightnessForAmount,
 } from '@shoutem/theme';
 
 const {

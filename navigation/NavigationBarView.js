@@ -1,26 +1,25 @@
-import React, { PureComponent } from 'react';
-import _ from 'lodash';
-import tinyColor from 'tinycolor2';
+import * as NavigationExperimental from 'navigation-experimental';
 
 import {
+  Animated,
   Platform,
   StatusBar,
-  Animated,
-  NavigationExperimental,
 } from 'react-native';
-
-import { connectStyle } from '@shoutem/theme';
+import React, { PureComponent } from 'react';
 import {
-  connectAnimation,
-  isAnimatedStyleValue,
-  getAnimatedStyleValue,
-  addAnimatedValueListener,
-  removeAnimatedValueListener,
   TimingDriver,
+  addAnimatedValueListener,
+  connectAnimation,
+  getAnimatedStyleValue,
+  isAnimatedStyleValue,
+  removeAnimatedValueListener,
 } from '@shoutem/animation';
 
-import composeChildren from './composeChildren';
 import { LinearGradient } from '../components/LinearGradient';
+import _ from 'lodash';
+import composeChildren from './composeChildren';
+import { connectStyle } from '@shoutem/theme';
+import tinyColor from 'tinycolor2';
 
 const {
   Header: NavigationHeader,
